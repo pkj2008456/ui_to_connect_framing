@@ -15,6 +15,7 @@ const Main: React.FC<MainProps> = ({ showDeviceDetails, onDeviceClick }) => {
         <div>
           {/* 這裡可以放置新的頁面內容 */}
           <h2 onClick={onDeviceClick}>Device Details</h2>
+          <DeviceList onDeviceClick={onDeviceClick} />
           {/* 你可以根據需要添加更多內容 */}
         </div>
       ) : (
