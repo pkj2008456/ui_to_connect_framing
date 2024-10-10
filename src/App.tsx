@@ -1,16 +1,24 @@
 import './App.css';
 import Header from './components/Header';
-import WeatherInfo from './components/WeatherInfo';
-import ControlButtons from './components/ControlButtons';
-import DeviceList from './components/DeviceList';
+import Main from './components/Main';
+import { useState } from 'react';
+
+
 function App() {
+  const [showDeviceDetails, setShowDeviceDetails] = useState(false);
+
+  const handleDeviceClick = () => {
+    setShowDeviceDetails(showDeviceDetails => !showDeviceDetails);
+  };
+
   return (
-    <div className="container">
-      <Header />
-      <WeatherInfo />
-      <ControlButtons />
-      <h3>All Devices</h3>
-      <DeviceList />
+    <div>
+      <div className="container-fluid">
+        <Header />
+      </div>
+      <div className="container-fluid">
+        <Main showDeviceDetails={showDeviceDetails} onDeviceClick={handleDeviceClick} />
+      </div>
     </div>
   );
 }
