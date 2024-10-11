@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
+# Daniel Job Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Make sure you have the following installed:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+Follow these steps to get the project up and running:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. **Clone the repository:**
+
+    ```sh
+    git clone https://github.com/your-username/your-repo.git
+    cd your-repo
+    ```
+
+2. **Install dependencies:**
+
+    ```sh
+    npm install
+    ```
+
+3. **Start the development server:**
+
+    click the <span style="color: red;">react_start.bat </span></br>
+
+    <div style="color: red;"> or </div>
+    <br>
+
+    ```sh
+    npm run dev
+    ```
+
+    This will start the Vite development server. Open your browser and navigate to `http://localhost:5173` to see the application.
+
+4. **see on other device**
+  you may see the mulitpule line when after step three
+  PS D:\self_learn\daniel_job> npm run dev
+```sh
+> daniel_job@0.0.0 dev
+> vite
+
+
+  VITE v5.4.8  ready in 1175 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://xxx.xxx.xx.xx:5173/
+  ➜  press h + enter to show help
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+After entering the network IP in the mobile browser, you should be able to enter successfully.
